@@ -1,9 +1,7 @@
 /**
- * APP Health Calc
- * Calculadora métricas de saúde
- * @author Emmanuel L. Nogueira
- * @version 1.0
- * @link https://github.com/emmanuel-lacerd4/health
+ * Calculo de quantos litros cabem no aquario
+ * @author Marcos Ryan
+ * @link https://www.youtube.com/channel/UCiVuxdmrUV0yysFFzuHoOYg
  */
 
 // Variáveis
