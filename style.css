@@ -1,0 +1,144 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: sans-serif;
+    font-size: 1em;
+    text-align: center;
+}
+
+/* Cabeçalho */
+header {
+    margin: 20px 0px 25px 0px;
+}
+
+header h1 {
+    font-size: 2.5em;
+    color: #cc470d;
+}
+
+/* Caixas de input number */
+input[type=number] {
+    width: 90px;
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #cc470d;
+    font-size: 1.1em;
+}
+
+
+/* Radio Buttons */
+.radio {
+    margin: 25px 0px;
+}
+
+#f {
+    margin-top: 25px;
+    margin-left: 25px;
+}
+
+/* Lista (combo box) */
+#atividade {
+    margin-top:25px ;
+    margin-bottom: 25px;
+    padding: 10px;
+}
+
+/* Botões */
+input[type=button],
+input[type=reset] {
+    padding: 10px 25px;
+    border-radius: 25px;
+    border: none;
+    background: #cc470d;
+    color: #ffffff;
+    font-size: 1.15em;
+}
+
+input[type=reset] {
+    margin-left: 20px;
+}
+
+/* Linhas */
+hr {
+    margin: 10px 0px;
+}
+
+/* Mostrador e coração pulsando */
+/* Calorias e água */
+#calorias,
+#agua {
+    font-size: 1.3em;
+}
+
+#calorias {
+    color: #cc470d;
+}
+
+#agua {
+    color: #0d96cc;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;   /* Alinha o coração e o texto "FCM" em coluna */
+    justify-content: center;  /* Centraliza verticalmente */
+    align-items: center;    /* Alinha os elementos à direita */
+    padding-right: 20px;      /* Ajusta a distância da borda direita, se necessário */
+}
+
+.coracao {
+    width: 50px;
+    height: 50px;
+    margin-top: 35px;
+    position: flex;       /* Mantém o ícone relativo ao container */
+    transform: rotate(-135deg);
+    animation: pulsar 0.7s infinite alternate;
+    z-index: -1;
+}
+
+#freq {
+    height: 80px;
+    margin-top: -50px;         /* Espaço entre o coração e o texto */
+    text-align: center;
+    font-size: 1.3em;
+    color: #ffffff;
+}
+
+.quadrado {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    background-color: #ff0000;
+}
+
+.circulo {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    background-color: #ff0000;
+    border-radius: 50px;
+}
+
+.top {
+    top: 50%;
+}
+
+.left {
+    left: 50%;
+}
+
+/* Função CSS3 para ampliar e reduzir o coração */
+@keyframes pulsar {
+    0% {
+        transform: scale(0.95) rotate(-135deg);
+    }
+
+    100% {
+        transform: scale(1.15) rotate(-135deg);
+    }
+}
